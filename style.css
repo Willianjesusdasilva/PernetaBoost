@@ -91,18 +91,18 @@ body {
   content: "> ";
 }
 
-/*
+
 .input {
-  color: rgba(192, 255, 192, 0.8);
+  color: rgba(255, 255, 255, 0.8);
   text-shadow:
-      0 0 1px rgba(51, 255, 51, 0.4),
+      0 0 1px rgba(255, 255, 255, 0.4),
       0 0 2px rgba(255, 255, 255, 0.8);
 }
 
 .input::before {
   content: "$ ";
 }
-*/
+
 a {
   color: rgba(15,251,249,255);
   text-decoration: none;
@@ -120,4 +120,31 @@ a::after {
 .errorcode {
   color: rgba(204,15,57,255);
   text-shadow: 0 0 1px rgba(204,15,57), 0 0 2px rgba(204,15,57, 0.8);
+}
+
+.blink {
+  -webkit-animation: 1s linear infinite condemned_blink_effect;
+  animation: 1s linear infinite condemned_blink_effect;
+}
+@-webkit-keyframes condemned_blink_effect {
+  0% {
+      visibility: hidden;
+  }
+  50% {
+      visibility: hidden;
+  }
+  100% {
+      visibility: visible;
+  }
+}
+@keyframes condemned_blink_effect {
+  0% {
+      visibility: hidden;
+  }
+  50% {
+      visibility: hidden;
+  }
+  100% {
+      visibility: visible;
+  }
 }
